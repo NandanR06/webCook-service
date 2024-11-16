@@ -22,9 +22,9 @@ mongoose.connect(url)
 
 app.use(router)
 
-app.use((req,res)=>{
-    res.render("404");
-})
+// app.use((req,res)=>{
+//     res.render("404");
+// })
 app.listen(port,(req,res)=>{
     console.log(`running in  the port ${port}`)
 })
