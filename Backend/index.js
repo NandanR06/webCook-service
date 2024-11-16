@@ -7,7 +7,9 @@ import router from './Routers/Routes.js';
 const app = express();
 app.use(express.json());
 app.use(cors());
-app.set("view engine","ejs");
+// app.options('/signup', cors()); // Preflight handling for /signup
+
+// app.set("view engine","ejs");
 
 const url = process.env.DATABASE_URl;
 const port = process.env.PORT;
@@ -21,10 +23,17 @@ mongoose.connect(url)
 })
 
 app.use(router)
+<<<<<<< HEAD
 
 // app.use((req,res)=>{
 //     res.render("404");
 // })
+=======
+// 
+//app.use((req,res)=>{
+   // res.render("404");
+//})
+>>>>>>> e2ee6d4e93c7dcd6ddaf03e2cdc7797e50d61e4f
 app.listen(port,(req,res)=>{
     console.log(`running in  the port ${port}`)
 })
