@@ -23,17 +23,15 @@ mongoose.connect(url)
 })
 
 app.use(router)
-<<<<<<< HEAD
+
 
 // app.use((req,res)=>{
 //     res.render("404");
 // })
-=======
 // 
 //app.use((req,res)=>{
    // res.render("404");
 //})
->>>>>>> e2ee6d4e93c7dcd6ddaf03e2cdc7797e50d61e4f
 app.listen(port,(req,res)=>{
     console.log(`running in  the port ${port}`)
 })
