@@ -93,7 +93,7 @@ export default function SignUp() {
                                     login('/')
                                 }
                             })
-                            .catch(err => console.error(err));
+                            .catch(err => console.log(err));
                         setData(true);
                         console.log(data)
                     }
