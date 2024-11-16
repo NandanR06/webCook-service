@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 // app.use(cors());
 app.use(cors({
-    origin: 'https://webcook-service-tipx.onrender.com',
+    origin: 'https://webcook-android.onrender.com',
 }));
 // app.options('/signup', cors()); // Preflight handling for /signup
 
