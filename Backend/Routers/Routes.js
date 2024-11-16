@@ -1,11 +1,12 @@
 import { Router } from "express";
 import userData from "../Module/Database.js";
-import * as bcrypt from 'bcrypt'
+import  bcrypt from 'bcryptjs'
 const router = Router();
 
 router.post('/signup', async (req, res) => {
     const { name, password ,email} = req.body;
-    const hashPassword = await bcrypt.hash(password,10);
+    // const hashPassword = await bcrypt.hash(password,10);
+    const ha = await bcrypt.hash(password,10);
     
         const userExist =await  userData.findOne({name});
          if(userExist){
@@ -13,7 +14,7 @@ router.post('/signup', async (req, res) => {
          }
         else{
             try {
-                const data = new userData({name:name,password:hashPassword ,email:email});
+                const data = new userData({name:name,password:ha ,email:email});
                 const save = await data.save();
                 res.status(200).json(save)
             } catch (error) {
