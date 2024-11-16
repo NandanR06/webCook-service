@@ -24,6 +24,10 @@ router.post('/signup', async (req, res) => {
         }
 });
 
+router.get('/',async (req,res)=>{
+    res.status(200).json({message:"accsess"})
+})
+
 
 router.post('/login', async (req, res) => {
     const { name,password } = req.body;
