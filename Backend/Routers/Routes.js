@@ -32,7 +32,6 @@ router.post('/login', async (req, res) => {
         if (!userExist) {
             return res.status(200).json({ exist: false });
         }
-
         const passwordMatch = await bcrypt.compare(password, userExist.password);
         if (passwordMatch) {  
             res.status(200).json({ exist: true });

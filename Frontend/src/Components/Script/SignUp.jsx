@@ -26,8 +26,7 @@ export default function SignUp() {
 
 
     const login = useNavigate();
-    const url = 'https://webcook-service.onrender.com';
-
+    const url = 'http://localhost:5000';
 
     const handleRefresh = () => {
         setRotate(false)
