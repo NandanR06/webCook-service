@@ -1,22 +1,27 @@
 # Webcook
 
-![Webcook Banner]('../asserts/logo-s.png')  
-*Webcook is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project provides [brief purpose of the app, such as "an online food delivery platform" or "a service management platform"].*
+![Webcook Banner](Frontend/src/asserts/main.png)  
+*Webcook is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project provides [brief purpose of the app, such as  "a service management platform"].*
 
 ---
 
 ## Features
 
-![Features Image](https://via.placeholder.com/600x200?text=Features)  
-- **Secure Authentication**: Users can securely register, log in, and manage sessions using JWT (JSON Web Tokens) for authentication.  
+![Features Image](Frontend/src/asserts/login.png)
+![Features Image](Frontend/src/asserts/signin.png)  
+
+![Features Image](Frontend/src/asserts/client.png)  
+
+![Features Image](Frontend/src/asserts/service.png)  
+
+![Features Image](Frontend/src/asserts/app.png)  
+
 - **Dynamic UI**: The frontend is built with React, ensuring a smooth and responsive user experience. Material-UI is used for a modern design.  
 - **RESTful APIs**: The backend uses Express.js to create RESTful APIs that handle CRUD operations for user data, services, and other resources stored in MongoDB.  
 
 ---
 
 ## Tech Stack
-
-![Tech Stack](https://via.placeholder.com/600x200?text=MERN+Stack)  
 
 The application is built using the following technologies:  
 - **Frontend**:  
@@ -31,13 +36,4 @@ The application is built using the following technologies:
 
 ---
 
-## Setup Instructions
 
-![Setup Image](https://via.placeholder.com/600x200?text=Setup+Guide)  
-
-To set up and run this project locally, follow these steps:
-
-1. **Clone the repository**:  
-   ```bash  
-   git clone https://github.com/yourusername/webcook.git  
-   cd webcook  
