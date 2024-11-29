@@ -6,10 +6,10 @@ import router from './Routers/Routes.js';
 
 const app = express();
 app.use(express.json());
-// app.use(cors());
-app.use(cors({
-    origin: 'https://webcook-android.onrender.com',
-}));
+app.use(cors());
+// app.use(cors({
+    
+// }));
 // app.options('/signup', cors()); // Preflight handling for /signup
 // app.set("view engine","ejs");
 
