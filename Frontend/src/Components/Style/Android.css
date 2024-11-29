@@ -1,0 +1,118 @@
+.service{
+    background: linear-gradient(65deg,white,rgb(181, 181, 237),white);
+}
+.image-set {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px 40px;
+}
+
+.image-set img {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: 8px;
+}
+
+.services-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.our-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px 0px;
+}
+
+.our-services h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    color: blue;
+    text-align: center;
+}
+
+.our-services p {
+    opacity: 0.5;
+    text-align: center;
+}
+.service-info {
+ margin:20px 10rem;
+ display: flex;
+ text-align:center;
+ align-content: center;
+ justify-content: center;
+ gap: 8px;
+ flex-direction: column;
+}
+.btn{
+    margin-top: -3px;
+    padding: 10px 20px;
+    background-color: rgb(91, 128, 241);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: blue;
+    color:white;
+}
+
+@media(max-width:480px){
+    .image-set {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        margin: 20px 20px;
+    }
+    .image-set img {
+        width: 300px;
+        height: 180px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-left: 8px;
+    }
+    .service-info {
+        margin:20px 1rem;
+        display: flex;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        gap: 8px;
+        flex-direction: column;
+       }
+}
+
+@media (min-width : 481px) and (max-width : 768px){
+
+    .image-set {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        margin: 20px 30px;
+    }
+    .image-set img {
+        width: 300px;
+        height: 180px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-left: 8px;
+    }
+    .service-info {
+        margin:20px 1.5rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 8px;
+        text-align:center;
+        flex-direction: column;
+       }
+
+}

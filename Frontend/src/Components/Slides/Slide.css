@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;    
+}
+
+.image-container {
+    display: flex;
+    transition: transform 5s linear;
+    width: 200%;
+}
+
+.image {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .image {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .image {
+        width: 100%; 
+    }
+}
